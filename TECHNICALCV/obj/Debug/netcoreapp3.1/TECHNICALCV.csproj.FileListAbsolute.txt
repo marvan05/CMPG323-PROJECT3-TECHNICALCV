@@ -39,3 +39,4 @@ C:\PROJECT3\TECHNICALCV\TECHNICALCV\obj\Debug\netcoreapp3.1\TECHNICALCV.csproj.C
 C:\PROJECT3\TECHNICALCV\TECHNICALCV\obj\Debug\netcoreapp3.1\Razor\Views\Home\WorkExperience.cshtml.g.cs
 C:\PROJECT3\TECHNICALCV\TECHNICALCV\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
 C:\PROJECT3\TECHNICALCV\TECHNICALCV\obj\Debug\netcoreapp3.1\Razor\Views\Home\Skills.cshtml.g.cs
+C:\PROJECT3\TECHNICALCV\TECHNICALCV\obj\Debug\netcoreapp3.1\Razor\Views\Home\Education.cshtml.g.cs

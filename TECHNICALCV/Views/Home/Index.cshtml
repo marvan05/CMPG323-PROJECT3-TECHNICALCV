@@ -2,7 +2,44 @@
     ViewData["Title"] = "Home Page";
 }
 
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+$(document).ready(function() {
+  $('.has-animation').each(function(index) {
+    $(this).delay($(this).data('delay')).queue(function(){
+      $(this).addClass('animate-in');
+    });
+  });
+});
+<!------ JS Code ---------->
+
+
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Marléne van Rensburg</h1>
 </div>
+
+<br>
+<div class="has-animation animation-ltr" data-delay="10">
+    <p class="bigger">Marléne van Rensburg </p>
+</div>
+
+<br>
+<br>
+
+<div class="has-animation animation-rtl" data-delay="1000">
+    <p class="text">I am an honest, motivated and dedicated lady.  I strive for excellence in everything I do and I take full responsibility for tasks entrusted to me.  I can fully function on my own but can also work very well in a team. I enjoy new challenges and take pleasure in learning new skills.  For this reason, I have also taught myself to create and manage websites and learn forex trading etc.  I am a very balanced person and believe in approaching all aspects of life with integrity, respect and positivity.  I am a friendly and helpful person with and even temperament, good interpersonal relationships and communication skills.</p>
+</div>
+<br>
+<br>
+
+<br>
+<br>
+<div class="has-animation animation-rtl" data-delay="2000">
+    <img src="~/images/MarlenevanRensburg.jpg" width="600" />
+</div>
+
+
+
