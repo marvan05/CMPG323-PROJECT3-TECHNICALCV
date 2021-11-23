@@ -1,27 +1,11 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Marlene van Rensburg";
 }
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="/css/bootstrap-css.css" rel="stylesheet">
 <!------ Include the above in your HEAD tag ---------->
 
-$(document).ready(function() {
-  $('.has-animation').each(function(index) {
-    $(this).delay($(this).data('delay')).queue(function(){
-      $(this).addClass('animate-in');
-    });
-  });
-});
-<!------ JS Code ---------->
-
-
-<div class="text-center">
-    <h1 class="display-4">Marléne van Rensburg</h1>
-</div>
-
-<br>
 <div class="has-animation animation-ltr" data-delay="10">
     <p class="bigger">Marléne van Rensburg </p>
 </div>
@@ -40,6 +24,19 @@ $(document).ready(function() {
 <div class="has-animation animation-rtl" data-delay="2000">
     <img src="~/images/MarlenevanRensburg.jpg" width="600" />
 </div>
+
+<script src="/lib/jquery/dist/jquery.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.has-animation').each(function (index) {
+            debugger;
+            $(this).delay($(this).data('delay')).queue(function () {
+                $(this).addClass('animate-in');
+            });
+        });
+    });
+</script>
 
 
 
