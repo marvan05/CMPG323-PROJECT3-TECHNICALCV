@@ -36,3 +36,6 @@ C:\PROJECT3\TECHNICALCV\TECHNICALCV\obj\Debug\netcoreapp3.1\TECHNICALCV.dll
 C:\PROJECT3\TECHNICALCV\TECHNICALCV\obj\Debug\netcoreapp3.1\TECHNICALCV.pdb
 C:\PROJECT3\TECHNICALCV\TECHNICALCV\obj\Debug\netcoreapp3.1\TECHNICALCV.genruntimeconfig.cache
 C:\PROJECT3\TECHNICALCV\TECHNICALCV\obj\Debug\netcoreapp3.1\TECHNICALCV.csproj.CopyComplete
+C:\PROJECT3\TECHNICALCV\TECHNICALCV\obj\Debug\netcoreapp3.1\Razor\Views\Home\WorkExperience.cshtml.g.cs
+C:\PROJECT3\TECHNICALCV\TECHNICALCV\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\PROJECT3\TECHNICALCV\TECHNICALCV\obj\Debug\netcoreapp3.1\Razor\Views\Home\Skills.cshtml.g.cs
