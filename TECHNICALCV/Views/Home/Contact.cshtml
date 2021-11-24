@@ -1,105 +1,29 @@
-﻿@page
-@model TECHNICALCV.Views.Home.ContactModel
+﻿@model  SendMailDto
 @{
+    ViewData["Title"] = "Contact";
 }
 
-<!--Section: Contact v.2-->
-<section class="mb-4">
+<h1>@ViewBag.Message</h1>
 
-    <!--Section heading-->
-    <h2 class="h1-responsive font-weight-bold text-center my-4">CONTACT ME</h2>
-    <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">
-        Do you want to contact me? </br>
-        Please do not hesitate to contact me directly. Alternatively send an email to 11946237@nwu.ac.za
-    </p>
-
-    <div class="row">
-
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
-                        </div>
-
-                    </div>
-                </div>
-                <!--Grid row-->
-
-            </form>
-
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
-            <div class="status"></div>
-        </div>
-        <!--Grid column-->
-        <!--Grid column-->
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li>
-                    <i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>NWU, Potchefstroom, SA</p>
-                </li>
-
-                <li>
-                    <i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>+ 2782 786 4056</p>
-                </li>
-
-                <li>
-                    <i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>11946237@nwu.ac.za</p>
-                </li>
-            </ul>
-        </div>
-        <!--Grid column-->
-
+<form method="post">
+    <div class="form-group">
+        <label asp-for="@Model.Name"></label>
+        <input type="text" asp-for="@Model.Name" class="form-control" placeholder="Enter your name" />
+        <span class="text-danger" asp-validation-for="@Model.Name"></span>
     </div>
-    <p></p>
-    <p></p>
-    
 
-   </section>
-<!--Section: Contact v.2-->
+    <div class="form-group">
+        <label asp-for="@Model.Subject"></label>
+        <input type="text" asp-for="@Model.Subject" class="form-control" placeholder="Enter your subject" />
+        <span class="text-danger" asp-validation-for="@Model.Subject"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="@Model.Message"></label>
+        <input type="text"  asp-for="@Model.Message" class="form-control" placeholder="Enter your Message" />
+        <span class="text-danger" asp-validation-for="@Model.Message"></span>
+    </div>
+    <button type="Submit" class="btn btn-primary">Send Mail</button>
+
+</form>
+
