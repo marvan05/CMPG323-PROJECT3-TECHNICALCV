@@ -56,16 +56,16 @@ namespace TECHNICALCV.Controllers
             try
             {
                 MailMessage mail = new MailMessage();
-                // you need to enter your mail address
-                mail.From = new MailAddress("11946237@nwu.ac.za");
+                // you need to enter your email address
+                mail.From = new MailAddress("marlenevanrensburg123@gmail.com");
 
                 // To Email Address - you need to enter your to email address
-                mail.To.Add("11946237@nwu.ac.za");
+                mail.To.Add("marlenevanrensburg123@gmail.com");
 
                 mail.Subject = sendMailDto.Subject;
 
                 // Add BC and CC email addresses
-                mail.CC.Add("11946237@g.nwu.ac.za");
+                mail.CC.Add("11946237@nwu.ac.za");
                 mail.Bcc.Add("marlenevanrensburg123@gmail.com");
 
                 mail.IsBodyHtml = true;
@@ -78,14 +78,14 @@ namespace TECHNICALCV.Controllers
                 //Create SMTP instant
 
                 //You need to pass mail server address and you can also specify the port number if you required
-                SmtpClient smtpClient = new SmtpClient("mail.nwu.ac.za");
+                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com");
 
                 //Create network credential and you need to give from email address and password
-                NetworkCredential networkCredential = new NetworkCredential("11946237@nwu.ac.za", "Oppi1121**");
+                NetworkCredential networkCredential = new NetworkCredential("marlenevanrensburg123@gmail.com", "Projek323**");
                 smtpClient.UseDefaultCredentials = false;
                 smtpClient.Credentials = networkCredential;
-                smtpClient.Port = 25; //This is default port number.  You can also change this
-                smtpClient.EnableSsl = false; //If ssl required you need to enable it
+                smtpClient.Port = 587; //This is default port number.  You can also change this
+                smtpClient.EnableSsl = true; //If ssl required you need to enable it
                 smtpClient.Send(mail);
 
                 ViewBag.Message = "Mail Send";
@@ -100,8 +100,8 @@ namespace TECHNICALCV.Controllers
                 //If any error occured it will show
                 ViewBag.Message = ex.Message.ToString();
             }
-            
-            
+
+
             return View();
         }
 

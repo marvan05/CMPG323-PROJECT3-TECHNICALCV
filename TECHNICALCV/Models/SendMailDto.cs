@@ -9,10 +9,10 @@ namespace TECHNICALCV.Models
     public class SendMailDto
     {
         [Required]
-        public string Name;
+        public string Name { get; set; }
         [Required]
-        public string Subject;
+        public string Subject { get; set; }
         [Required]
-        public string Message;
+        public string Message { get; set; }
     }
 }
