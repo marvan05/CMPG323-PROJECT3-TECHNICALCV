@@ -71,6 +71,9 @@ namespace TECHNICALCV.Controllers
                 mail.IsBodyHtml = true;
 
                 string content = "Name : " + sendMailDto.Name;
+                content += "<br/> Surname : " + sendMailDto.Surname;
+                content += "<br/> Email : " + sendMailDto.Email;
+                content += "<br/> Cell Phone : " + sendMailDto.Phone; 
                 content += "<br/> Message : " + sendMailDto.Message;
 
                 mail.Body = content;
