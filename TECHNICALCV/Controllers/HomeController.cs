@@ -84,7 +84,7 @@ namespace TECHNICALCV.Controllers
                 SmtpClient smtpClient = new SmtpClient("smtp.gmail.com");
 
                 //Create network credential and you need to give from email address and password
-                NetworkCredential networkCredential = new NetworkCredential("marlenevanrensburg123@gmail.com", "Projek323**");
+                NetworkCredential networkCredential = new NetworkCredential("marlenevanrensburg123@gmail.com", "#password#");
                 smtpClient.UseDefaultCredentials = false;
                 smtpClient.Credentials = networkCredential;
                 smtpClient.Port = 587; //This is default port number.  You can also change this
