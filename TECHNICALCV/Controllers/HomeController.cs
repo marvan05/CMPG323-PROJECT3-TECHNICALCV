@@ -91,7 +91,7 @@ namespace TECHNICALCV.Controllers
                 smtpClient.EnableSsl = true; //If ssl required you need to enable it
                 smtpClient.Send(mail);
 
-                ViewBag.Message = "Mail Send";
+                ViewBag.Message = "Thank you! Email Send.";
 
                 //Create the from
                 ModelState.Clear();
