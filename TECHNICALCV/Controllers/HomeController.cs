@@ -66,6 +66,7 @@ namespace TECHNICALCV.Controllers
 
                 // Add BC and CC email addresses
                 mail.CC.Add("11946237@nwu.ac.za");
+                mail.CC.Add(sendMailDto.Email);
                 mail.Bcc.Add("marlenevanrensburg123@gmail.com");
 
                 mail.IsBodyHtml = true;
@@ -91,7 +92,7 @@ namespace TECHNICALCV.Controllers
                 smtpClient.EnableSsl = true; //If ssl required you need to enable it
                 smtpClient.Send(mail);
 
-                ViewBag.Message = "Thank you! Email Send.";
+                ViewBag.Message = "Thank you! Email Send. You will receive a copy of the email.";
 
                 //Create the from
                 ModelState.Clear();
